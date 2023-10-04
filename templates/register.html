@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        .navbar-fixed-top {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        #video-container {
+            text-align: center;
+        }
+
+        #video {
+            width: 100%;
+            max-width: 640px;
+        }
+
+        #capture-button {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Register new face</title>
+    <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary navbar-fixed-top">
+        <a class="navbar-brand text-white" href="/">Face Secure</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+</head>
+    <div class="bg-dark text-white text-center">
+    <body>
+        <div class="display-4">
+        Register Face
+        </div>
+    </br>
+</br>
+<div class="text-center">
+    <i><u>Instructions</i></u>
+<ul>
+        <li><h6>Upload existing image or capture using web cam </h6></li>
+        <li><h6>Please click allow for the browser to use camera</h6></li>
+        <li><h6>Click the capture button to store the face in the database</h6></li>
+        <li><h6>Make sure the lighting is suitable</h6></li>
+</ul>
+
+</div>
+<div class="display-4">
+Upload picture or capture Live
+</div>
+    </br>
+</br>
+</br>
+    <form action="/register" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload an Image:</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+        <br>
+        <label for="name">Enter Name (required):</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <button type="submit" class="btn-success">Register</button>
+    </form>
+    <br>
+    <a href="/">Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <title>Face Registered</title>
+     <nav class="navbar navbar-expand-lg navbar-secondary bg-secondary">
+         <a class="navbar-brand text-white" href="/">Face Secure</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+       
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <form class="form-inline my-2 my-lg-0 ml-auto">
+             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+           </form>
+         </div>
+       </nav>
+</head>
+<div class="bg-dark display-4 text-white text-center">
+<body>
+    <h1>Face Registered Successfully</h1>
+    <p>Your face has been registered with ID: {{ captured_image.id }}</p>
+    <a href="/">Back to Home</a>
+</body>
+</div>
+</html>
